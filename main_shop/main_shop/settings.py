@@ -30,7 +30,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'shop',
-    'mptt'
+    'mptt',
+    # 'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -41,6 +42,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'main_shop.urls'
@@ -122,4 +124,8 @@ STATIC_URL = '/static/'
 
 AUTH_USER_MODEL = 'shop.User'
 
+# INTERNAL_IPS = [
+#     '127.0.0.1',
+# ]
 
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
